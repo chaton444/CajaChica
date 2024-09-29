@@ -1,0 +1,12 @@
+<div class="carousel-container">
+    <carousel>
+      <slide *ngFor="let image of images">
+        <img [src]="image.url" alt="Slide image" class="carousel-image img-fluid" />
+        <div class="carousel-caption">
+          <h3>{{ image.title }}</h3>
+          <p>{{ image.description }}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  

@@ -1,0 +1,61 @@
+.custom-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.456);
+}
+
+.app-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+.app-logo {
+    height: 40px; /* Ajusta la altura según sea necesario */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+
+nav button {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px;
+    border: none; 
+    color: #000000;
+    background: none;
+    cursor: pointer; /* Añade un cursor tipo puntero */
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+nav button:hover {
+    background-color: rgba(0, 0, 0, 0.912); /* Color de fondo al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
+
+nav button:focus {
+    transition:background-color 0.3s ease, color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.16); /* Color de fondo al enfocar */
+}
+
+.user-button {
+    margin-left: 16px;
+}
+
+mat-icon {
+    vertical-align: middle;
+}
+
+mat-menu-item {
+    display: flex;
+    align-items: center;
+}
+
+mat-menu-item mat-icon {
+    margin-right: 8px;
+}

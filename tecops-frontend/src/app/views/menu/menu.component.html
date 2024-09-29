@@ -1,0 +1,32 @@
+<mat-toolbar color="primary" class="custom-toolbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/44/44873.png" alt="Logo" class="app-logo"> 
+    <span class="app-title">Caja Chica</span>
+    
+    <span class="spacer"></span>
+  
+    <nav>
+      <button  routerLink="/inicio">Inicio</button>
+      <button  routerLink="/gastos">Gastos</button>
+      <button  routerLink="/personas">Personas</button>
+      <button  routerLink="/usuarios">Usuarios</button>
+    </nav>
+  
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Cuenta de usuario" class="user-button">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>person</mat-icon>
+        <span>Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+  <router-outlet></router-outlet>  
+  
+ 
+  

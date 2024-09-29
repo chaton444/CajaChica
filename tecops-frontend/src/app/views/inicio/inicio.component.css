@@ -1,0 +1,32 @@
+.carousel-container {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 80vh; /* Ajusta la altura según lo que necesites */
+    margin: 0; /* Elimina márgenes */
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 0; /* Bordes rectos */
+    box-shadow: none; /* Elimina sombra */
+    overflow: hidden; /* Oculta contenido que sobresalga */
+  }
+  
+  .carousel {
+    width: 100%;
+    height: 100%; /* Ajusta la altura al contenedor */
+  }
+  
+  .carousel-image {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: 100%; /* Imagen ocupa toda la altura */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre el área */
+    border-radius: 0; /* Bordes rectos en imágenes */
+  }
+  
+  .carousel-caption {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    bottom: 20px; /* Ajusta la posición según lo necesites */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    color: #fff; /* Color blanco para el texto */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+  }
+  

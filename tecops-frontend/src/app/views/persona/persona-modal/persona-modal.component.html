@@ -1,0 +1,38 @@
+<br>
+<div class="custom-form-field">
+  <label>Nombres</label>
+  <input type="text" placeholder="Nombre" [(ngModel)]="persona.nombres" (input)="convertToUpperCase($event)">
+</div>
+
+<div class="custom-form-field">
+  <label>Apellidos</label>
+  <input type="text" placeholder="Apellidos" [(ngModel)]="persona.apellidos" (input)="convertToUpperCase($event)">
+</div>
+
+<div class="custom-form-field">
+  <label>Edad</label>
+  <input type="number" placeholder="Edad" [(ngModel)]="persona.edad" >
+</div>
+
+<div class="custom-form-field">
+  <label>Correo</label>
+  <input type="email" placeholder="Correo" [(ngModel)]="persona.correo">
+</div>
+
+<div class="custom-form-field">
+  <label>Pais</label>
+  <label>{{ persona.pais ? persona.pais.nombre : 'Seleccione un país' }}</label>
+  <select [(ngModel)]="persona.pais">
+      <option value="" disabled selected>Seleccione un país</option>
+      <option *ngFor="let p of pais" [ngValue]="p">{{ p.nombre }}</option>
+  </select>
+</div>
+
+
+
+
+
+<div class="button-container">
+  <button class="button button-aceptar" (click)="aceptar()">Aceptar</button>
+  <button class="button button-cancelar" (click)="cancelar()">Cancelar</button>
+</div>

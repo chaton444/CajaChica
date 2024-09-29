@@ -1,0 +1,72 @@
+.custom-form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px; /* Espacio entre los campos */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 80%; /* Ancho máximo de los campos */
+    margin-left: auto; /* Centra el campo */
+    margin-right: auto; /* Centra el campo */
+}
+
+.custom-form-field label {
+    margin-bottom: 4px; /* Espacio entre el label y el input */
+    color:rgb(0, 0, 0);
+    
+}
+
+.custom-form-field input,
+.custom-form-field select {
+    padding: 10px; /* Espaciado interno para el campo de entrada */
+    font-size: 16px; /* Ajuste del tamaño de fuente */
+    border: 1px solid #4f4f4f; /* Bordes */
+    border-radius: 7px; /* Bordes redondeados (con unidades) */
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+    width: 100%; /* Ancho del input al 100% del contenedor */
+}
+
+
+.custom-form-field input:focus,
+.custom-form-field select:focus {
+    border-color: rgba(0, 37, 224, 0.912); /* Color del borde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+.custom-form-field input::placeholder {
+    color: #3c3c3c; /* Color del placeholder */
+}
+.button {
+    padding: 10px 16px; /* Espaciado interno del botón más pequeño */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    border: none; /* Sin borde */
+    border-radius: 7px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    margin-right: 10px; /* Espacio a la derecha de cada botón */
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.button-aceptar {
+    background-color: #007bff; /* Color de fondo para el botón Aceptar */
+    color: rgb(241, 241, 241); /* Color del texto */
+}
+
+.button-aceptar:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+.button-cancelar {
+    background-color: #dc3545; /* Color de fondo para el botón Cancelar */
+    color: rgb(241, 241, 241); /* Color del texto */
+}
+
+.button-cancelar:hover {
+    background-color: #c82333; /* Color de fondo al pasar el mouse */
+}
+.button-container {
+    display: flex; /* Flexbox para alinear los botones */
+    justify-content: center; /* Centrar los botones */
+    margin-top: 3px; /* Espacio superior */
+    margin-bottom: 10px;
+}
+
